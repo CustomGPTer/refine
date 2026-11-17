@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refine: a free search builder for Google, Bing and DuckDuckGo on Android</title>
+<meta name="description" content="Refine is an Android app that builds precise searches. Tick a file type, a website or a date range and it writes the search shortcuts for you. Free, no adverts, no tracking.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/refine/">
+<meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b111c" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Refine">
+<meta property="og:title" content="Refine: a free search builder for Google, Bing and DuckDuckGo on Android">
+<meta property="og:description" content="Refine is an Android app that builds precise searches. Tick a file type, a website or a date range and it writes the search shortcuts for you. Free, no adverts, no tracking.">
+<meta property="og:url" content="https://customgpter.github.io/refine/">
+<meta property="og:image" content="https://customgpter.github.io/refine/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Refine name beside a search built from ticked boxes: file type PDF, one website, the past year">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/literata-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Refine","url":"https://customgpter.github.io/refine/","description":"Refine is an Android app that builds precise searches for Google, Bing and DuckDuckGo. You tick what you want, such as a file type, a website or a date range, and it writes the search shortcuts for you.","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 11 or later","softwareVersion":"1.0","downloadUrl":"https://github.com/CustomGPTer/refine/releases/latest/download/Refine.apk","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Refine","url":"https://customgpter.github.io/refine/","inLanguage":"en-GB"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Refine really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked."}},{"@type":"Question","name":"Is Refine on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Refine is a personal project and is downloaded from this site as an Android app file. It needs Android 11 or later, which covers almost every phone sold in recent years."}},{"@type":"Question","name":"Are there really hundreds of Google shortcuts?","acceptedAnswer":{"@type":"Answer","text":"No. Google has about 25 typed shortcuts that work every time, a further handful that are hit-and-miss, and a dozen it has switched off. The rest of the power is in filters that live in the web address, such as exact dates, language, country and the kind of result. Refine has a box for all of the ones that still do something, and tells you which are hit-and-miss. The shortcuts page lists every one."}},{"@type":"Question","name":"Does Refine see my searches?","acceptedAnswer":{"@type":"Answer","text":"Nobody connected with Refine does. The app builds a normal search link and hands it to your browser, exactly as if you had typed it yourself. Your history and presets are kept on your phone. The detail is in the privacy policy."}},{"@type":"Question","name":"Why does a shortcut say “May not work”?","acceptedAnswer":{"@type":"Answer","text":"Search engines change their shortcuts without notice. One with that label has not been switched off, but it does not always do what it says. If a search looks wrong, that box is the first one to untick."}},{"@type":"Question","name":"Does it work with Bing and DuckDuckGo?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pick the engine at the top. Each one understands a different set of shortcuts, so Refine greys out the boxes that engine does not know and leaves them out of the search, and tells you which ones it left out."}},{"@type":"Question","name":"Can I use the searches on my laptop?","acceptedAnswer":{"@type":"Answer","text":"Yes. Copy the finished search with one tap and paste it into any browser. The in-app cheat sheet lists every shortcut and can be saved as a PDF to keep by your desk."}},{"@type":"Question","name":"How do I update Refine?","acceptedAnswer":{"@type":"Answer","text":"Refine tells you when it opens if a newer version is out. Download it from this site and install it over the one you have. Your presets, site groups and history are kept."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Refine home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1f3a5f"/><circle cx="48" cy="48" r="18" fill="none" stroke="#fff" stroke-width="5"/><path d="M61.5 61.5 77 77" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M39 41.5h18M42.5 48h11M46 54.5h4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg><span>Refine</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="shortcuts.html">Shortcuts</a></li><li><a href="releases.html">Releases</a></li><li><a class="more-apps" href="more-apps.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="licences.html">Licences</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Find the file, not ten pages of adverts for it</h1>
+<p class="lede">Search engines have shortcuts that cut straight to what you want: only PDFs, only one website, only this year, never that word. Hardly anyone remembers them. Refine is an Android app that lets you tick what you want and writes the shortcuts for you.</p>
+<p class="lede">It is free, with no adverts and nothing to unlock. It works with Google, Bing and DuckDuckGo, and opens the results in your own browser.</p>
+<p class="get"><a class="button" href="https://github.com/CustomGPTer/refine/releases/latest/download/Refine.apk">Download for Android</a></p>
+<p class="facts">Free, with nothing to unlock. Android 11 or later. No ads, no accounts, no tracking. <a href="shortcuts.html">Every shortcut</a> &middot; <a href="releases.html">Release notes</a></p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="demo" role="img" aria-label="The Refine search screen. Search for reads confined space rescue plan. Under File type, PDF and Word are ticked. Under Only from these sites, the group UK regs and HSE is ticked. Under Date, Past year is ticked. Under Leave out are the words training and course. At the bottom is the finished search, written out with its shortcuts, and a Search button."><div class="view"><div class="bar"><span class="dot"></span><span>Refine</span><span class="next">Google</span></div><div class="sheet"><p class="lab">Search for</p><p class="field">confined space rescue plan</p><p class="lab">File type</p><p class="chips"><span class="on">PDF</span><span class="on">Word</span><span>Excel</span><span>PowerPoint</span></p><p class="lab">Only from these sites</p><p class="chips"><span class="on">UK regs and HSE</span><span>Academic</span><span>Forums</span></p><p class="lab">Date</p><p class="chips"><span>Past week</span><span>Past month</span><span class="on">Past year</span></p><p class="lab">Leave out</p><p class="chips"><span class="on">training</span><span class="on">course</span></p></div><div class="out"><code>confined space rescue plan (filetype:pdf OR filetype:docx) (site:hse.gov.uk OR site:legislation.gov.uk OR site:gov.uk) -training -course</code><span class="go">Search</span></div></div></div>
+</div>
+</div>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">A search shortcut is a short code typed alongside your words, such as <code>filetype:pdf</code> to see only PDF files. They are powerful, fiddly, and easy to get wrong. Refine turns each one into a box to tick.</p>
+<ol class="steps">
+<li><h3>Type your subject</h3><p>In the app, or send it from another app: highlight a part number in an email, tap <span class="path">Refine</span>, and it is already in the search box.</p></li>
+<li><h3>Tick what you want</h3><p>File type, website, dates, words to leave out. The finished search is written out at the bottom as you go, so you can see exactly what will be sent.</p></li>
+<li><h3>Tap Search</h3><p>The results open in your usual browser, signed in as you. Save the set-up as a preset and next time it is one tap.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">The everyday boxes are at the top of the screen. The rarer ones are folded away underneath until you need them.</p>
+<dl class="features">
+<div><dt>Tick boxes, not codes</dt><dd>File type, website, dates, exact phrases, words to leave out, words in the title: each has its own box. Refine writes <code>filetype:</code>, <code>site:</code>, <code>intitle:</code> and the rest for you.</dd></div><div><dt>The search, shown as you build it</dt><dd>The finished search sits at the bottom of the screen and updates with every tick. Edit it by hand if you like, or copy it to use anywhere.</dd></div><div><dt>34 file types</dt><dd>PDF, Word, Excel, PowerPoint, CSV, CAD drawings, Google Earth files and more. The 15 most used are on show and the rest are one tap away. Tick several and a result can be any of them.</dd></div><div><dt>Dates that mean dates</dt><dd>One-tap buttons for the past hour, day, week, month or year, or a calendar for an exact From and To.</dd></div><div><dt>Site groups</dt><dd>Save a list of websites and search all of them in one tick, or leave them all out. Starter groups cover UK government, UK regulations and HSE, academic sites, forums and social media.</dd></div><div><dt>Presets</dt><dd>Save every box as it stands under a name. Next time it is one tap, and you only type the subject. Twenty-two ready-made presets are included, from PDF manuals to forum answers from the last year.</dd></div><div><dt>Filters Google hides in the address</dt><dd>Exactly-what-I-typed, no spelling correction, language, country, SafeSearch, and the kind of result: plain links with no AI summary, Images, News, Videos, Forums, Books, Scholar, Maps and more.</dd></div><div><dt>Image, video and book filters</dt><dd>Image size, colour, shape, kind and usage rights. Video length. Books you can read in full.</dd></div><div><dt>Three search engines</dt><dd>Google, Bing and DuckDuckGo. Refine translates where they differ, such as Bing’s <code>inbody:</code>, and greys out what an engine does not understand.</dd></div><div><dt>Honest about what works</dt><dd>Every box says whether its shortcut is reliable or hit-and-miss on the engine you have chosen. Shortcuts that Google has switched off are left out.</dd></div><div><dt>Paste a search, see what it does</dt><dd>Paste a search someone sent you and Refine ticks the matching boxes, so you can read it and change it.</dd></div><div><dt>From anywhere on your phone</dt><dd>Send text to Refine with Share, or highlight a word in any app and choose Refine from the pop-up menu. Share a web page and Refine searches inside that site.</dd></div><div><dt>Widget and icon shortcuts</dt><dd>A home-screen widget with a search box and your four starred presets. The same four sit on the menu you get by pressing and holding the app icon.</dd></div><div><dt>History you can reuse</dt><dd>Every search is kept on your phone. Run one again, or open it with all its boxes ticked and change one thing.</dd></div><div><dt>A cheat sheet to keep</dt><dd>Every shortcut in one place, in plain English with an example. Save it as a PDF and you can type them yourself on a laptop.</dd></div><div><dt>A backup file</dt><dd>Save your presets, site groups, history and settings to one small file, and load it on another phone.</dd></div>
+</dl>
+<p class="more"><a href="shortcuts.html">See every shortcut and filter, and which engines understand it</a></p>
+</div>
+</section>
+
+<section id="permissions" aria-labelledby="permissions-h">
+<div class="wrap">
+<h2 id="permissions-h">What it asks of your phone</h2>
+<p class="intro">Refine asks for one thing, internet access, and has no access to your files, contacts, location, camera or microphone.</p>
+<div class="scroll">
+<table>
+<thead><tr><th scope="col">Access</th><th scope="col">What Refine does with it</th><th scope="col">What it never does</th></tr></thead>
+<tbody>
+<tr><th scope="row">Internet access</th><td>Checks GitHub once a day for a newer version. Shows the results page inside the app, if you choose that in Settings instead of your browser.</td><td>Send your searches, history or presets to the developer or to anyone but the search engine you chose.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="after-table">Saving the cheat sheet or a backup file uses Android’s own file picker, so Refine sees only the one file you choose. The detail is in the <a href="privacy.html">privacy policy</a>.</p>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your searches are your business</h2>
+<ul class="plain">
+<li><h3>Nothing goes to the developer</h3><p>Refine builds a normal search link and hands it to your browser. What you searched for is between you and the search engine, as it always was.</p></li>
+<li><h3>No accounts, no adverts</h3><p>There is nothing to sign up for and no advertising in the app. This site has no cookies and no tracking.</p></li>
+<li><h3>No servers</h3><p>Refine’s developer runs no servers and collects nothing. Your history and presets stay on your phone.</p></li>
+</ul>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq">
+<div><h3>Is Refine really free?</h3><p>Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked.</p></div><div><h3>Is Refine on Google Play?</h3><p>No. Refine is a personal project and is downloaded from this site as an Android app file. It needs Android 11 or later, which covers almost every phone sold in recent years.</p></div><div><h3>Are there really hundreds of Google shortcuts?</h3><p>No. Google has about 25 typed shortcuts that work every time, a further handful that are hit-and-miss, and a dozen it has switched off. The rest of the power is in filters that live in the web address, such as exact dates, language, country and the kind of result. Refine has a box for all of the ones that still do something, and tells you which are hit-and-miss. The <a href="shortcuts.html">shortcuts page</a> lists every one.</p></div><div><h3>Does Refine see my searches?</h3><p>Nobody connected with Refine does. The app builds a normal search link and hands it to your browser, exactly as if you had typed it yourself. Your history and presets are kept on your phone. The detail is in the <a href="privacy.html">privacy policy</a>.</p></div><div><h3>Why does a shortcut say “May not work”?</h3><p>Search engines change their shortcuts without notice. One with that label has not been switched off, but it does not always do what it says. If a search looks wrong, that box is the first one to untick.</p></div><div><h3>Does it work with Bing and DuckDuckGo?</h3><p>Yes. Pick the engine at the top. Each one understands a different set of shortcuts, so Refine greys out the boxes that engine does not know and leaves them out of the search, and tells you which ones it left out.</p></div><div><h3>Can I use the searches on my laptop?</h3><p>Yes. Copy the finished search with one tap and paste it into any browser. The in-app cheat sheet lists every shortcut and can be saved as a PDF to keep by your desk.</p></div><div><h3>How do I update Refine?</h3><p>Refine tells you when it opens if a newer version is out. Download it from this site and install it over the one you have. Your presets, site groups and history are kept.</p></div>
+</div>
+</div>
+</section>
+
+<section id="get" aria-labelledby="get-h">
+<div class="wrap"><div class="measure">
+<h2 id="get-h">Getting Refine</h2>
+<p>Refine is a personal project and is free, with no paid version. It is downloaded from this site as an Android app file and is not on Google Play. It runs on phones and tablets with Android 11 or later.</p>
+<p class="get"><a class="button" href="https://github.com/CustomGPTer/refine/releases/latest/download/Refine.apk">Download for Android</a></p>
+<p>When you download, Chrome may warn that the file might be harmful. It shows this warning for app files that do not come from Google Play; choose Download anyway. If you want to be sure the file is the real one, compare it with the checksum in the <a href="releases.html#checking">release notes</a>.</p>
+<p>Open the downloaded file to install it. The first time, Android asks you to allow your browser to install apps. Google Play Protect may also step in, because Refine is an app it has not seen before: choose More details, then Install anyway. To update, install the latest version over the one you have: your presets, site groups and history are kept. What changed in each version is in the <a href="releases.html">release notes</a>.</p>
+<p>The same developer makes <a href="more-apps.html">other free Android apps</a>. For a question, a problem, or anything about your data, <a href="https://github.com/CustomGPTer/refine/issues">open an issue on GitHub</a>.</p>
+</div></div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<p>&copy; 2026 Jonathan Jackson. Refine is an independent app.</p>
+<p>This site uses no cookies and no tracking. It is set in Literata and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="Footer"><ul>
+<li><a href="./">Home</a></li>
+<li><a href="shortcuts.html">Shortcuts</a></li>
+<li><a href="releases.html">Release notes</a></li>
+<li><a href="more-apps.html">More apps</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+<li><a href="terms.html">Terms of use</a></li>
+<li><a href="licences.html">Licences</a></li>
+<li><a href="https://github.com/CustomGPTer/refine/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
