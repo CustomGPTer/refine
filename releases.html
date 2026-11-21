@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Refine release notes</title>
-<meta name="description" content="What is new in each version of Refine, the free search builder for Android. Current version 1.0.">
+<meta name="description" content="What changed in each version of Refine, with the file size and checksum to check your download.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/refine/releases.html">
 <meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
@@ -12,77 +12,68 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Refine">
 <meta property="og:title" content="Refine release notes">
-<meta property="og:description" content="What is new in each version of Refine, the free search builder for Android. Current version 1.0.">
+<meta property="og:description" content="What changed in each version of Refine, with the file size and checksum to check your download.">
 <meta property="og:url" content="https://customgpter.github.io/refine/releases.html">
 <meta property="og:image" content="https://customgpter.github.io/refine/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Refine name beside a search built from ticked boxes: file type PDF, one website, the past year">
+<meta property="og:image:alt" content="Refine&#x27;s search builder with a search for PDF and Word files from the past year">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/literata-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=1">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
 <div class="wrap">
 <a class="brand" href="./" aria-label="Refine home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1f3a5f"/><circle cx="48" cy="48" r="18" fill="none" stroke="#fff" stroke-width="5"/><path d="M61.5 61.5 77 77" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M39 41.5h18M42.5 48h11M46 54.5h4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg><span>Refine</span></a>
-<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="shortcuts.html">Shortcuts</a></li><li><a href="releases.html" aria-current="page">Releases</a></li><li><a class="more-apps" href="more-apps.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="licences.html">Licences</a></li></ul></nav>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html" aria-current="page">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/refine/releases/latest/download/Refine.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
 </div>
 </header>
 <main id="main" class="doc">
 <div class="wrap">
 <div class="measure">
 <h1>Release notes</h1>
-<p class="lede">What was added, improved and fixed in each version of Refine, newest first. The current version is 1.0.</p>
-<div class="get">
-<a class="button" href="https://github.com/CustomGPTer/refine/releases/latest/download/Refine.apk">Download the latest version</a>
-<p class="facts">Version 1.0. Android app file, 3.0 MB. Android 11 or later. Free.</p>
-<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway. To be sure of the file, see <a href="#checking">Checking your download</a>.</p>
-</div>
-<nav class="contents" aria-label="Versions"><strong>Versions</strong><ul><li><a href="#v1-0">1.0&ensp;First release</a></li></ul></nav>
-
-<article class="release" id="v1-0">
-<p class="ver">Version 1.0</p>
-<h2>First release</h2>
-<p class="when"><span class="tag">Latest</span>Released 16 November 2026</p>
-<h3>Added</h3>
-<ul><li>A search builder with a box for every shortcut that still does something: search words, exact phrases, any-of words, words to leave out, file types, websites to search in or leave out, and dates.</li><li>34 file types, with the 15 most used on show, the rest one tap away, and a box for any other.</li><li>Dates by one-tap buttons (past hour, day, week, month, year) or an exact From and To on a calendar.</li><li>Where the words appear: title, page text, web address, or links pointing to the page.</li><li>Kind of result: plain web links with no AI summary, Images, News, Videos, Short videos, Forums, Books, Shopping, Places, Maps, Scholar, Patents and Jobs.</li><li>Language and region: pages written in a language, pages from a country, searching as if from another country, and the language of the results page.</li><li>Fine tuning: exactly what I typed (Verbatim), no spelling correction, newest first, near-duplicate pages, untailored results and SafeSearch.</li><li>Image size, colour, kind, shape, usage rights and exact pixel size. Video length. Books by how much can be read.</li><li>Rarer ones: two words near each other, number ranges, sites like this one, quick lookups, news from one publication or place, and a box for anything typed as-is.</li><li>Google, Bing and DuckDuckGo. Boxes an engine does not understand are greyed out and left out of the search, and the app says which.</li><li>A “May not work” label on every hit-and-miss shortcut, and an explanation with an example behind every box.</li><li>The finished search shown as you build it, editable by hand, with a Copy button.</li><li>Paste a search to have the matching boxes ticked.</li><li>Site groups, with five starters, and presets, with 22 ready-made.</li><li>History kept on the phone, with run again, open in the boxes, and save as a preset.</li><li>Share and the highlight-text menu both send text into Refine. A shared web page becomes a search inside that site.</li><li>A home-screen widget and press-and-hold icon shortcuts for up to four starred presets.</li><li>A cheat sheet of every shortcut, which can be shared as text or saved as a PDF.</li><li>Results in your browser or inside Refine.</li><li>A backup file for presets, site groups, history and settings.</li><li>Wallpaper colours, light or dark.</li><li>A notice when a newer version is out.</li></ul>
-</article>
-
-<h2 id="installing">Installing and updating</h2>
-<ul>
-<li>When you download, Chrome may warn that the file might be harmful. It shows this warning for app files that do not come from Google Play. Choose Download anyway.</li>
-<li>Open the downloaded file. The first time, Android asks you to allow your browser or file manager to install apps. Allow it, then tap Install.</li>
-<li>Google Play Protect may say it does not recognise the app, or block it, because Refine does not come from Google Play. Choose More details, then Install anyway.</li>
-<li>To update, download the latest version and install it over the one you have. Your presets, site groups and history are kept.</li>
-<li>Every version is signed with the same key, so Android accepts an update only if it comes from the same developer.</li>
-</ul>
+<p class="lede">What changed in each version of Refine. The newest is at the top.</p>
+<section class="release" id="v1.0"><h2><span class="ver">Version 1.0</span> <span class="when">16 November 2026</span><span class="tag">Latest</span></h2><ul><li>A search builder with a box for every shortcut that still does something: search words, exact phrases, any-of words, words to leave out, file types, websites to search in or leave out, and dates.</li><li>34 file types, with the 15 most used on show, the rest one tap away, and a box for any other.</li><li>Dates by one-tap buttons (past hour, day, week, month, year) or an exact From and To on a calendar.</li><li>Where the words appear: title, page text, web address, or links pointing to the page.</li><li>Kind of result: plain web links with no AI summary, Images, News, Videos, Short videos, Forums, Books, Shopping, Places, Maps, Scholar, Patents and Jobs.</li><li>Language and region: pages written in a language, pages from a country, searching as if from another country, and the language of the results page.</li><li>Fine tuning: exactly what I typed (Verbatim), no spelling correction, newest first, near-duplicate pages, untailored results and SafeSearch.</li><li>Image size, colour, kind, shape, usage rights and exact pixel size. Video length. Books by how much can be read.</li><li>Rarer ones: two words near each other, number ranges, sites like this one, quick lookups, news from one publication or place, and a box for anything typed as-is.</li><li>Google, Bing and DuckDuckGo. Boxes an engine does not understand are greyed out and left out of the search, and the app says which.</li><li>A “May not work” label on every hit-and-miss shortcut, and an explanation with an example behind every box.</li><li>The finished search shown as you build it, editable by hand, with a Copy button.</li><li>Paste a search to have the matching boxes ticked.</li><li>Site groups, with five starters, and presets, with 22 ready-made.</li><li>History kept on the phone, with run again, open in the boxes, and save as a preset.</li><li>Share and the highlight-text menu both send text into Refine. A shared web page becomes a search inside that site.</li><li>A home-screen widget and press-and-hold icon shortcuts for up to four starred presets.</li><li>A cheat sheet of every shortcut, which can be shared as text or saved as a PDF.</li><li>Results in your browser or inside Refine.</li><li>A backup file for presets, site groups, history and settings.</li><li>Wallpaper colours, light or dark.</li><li>A notice when a newer version is out.</li></ul></section>
 <h2 id="checking">Checking your download</h2>
-<p>The file for version 1.0 is 3,142,411 bytes. Its SHA-256 checksum is:</p>
-<p class="sum"><code>9c308e06eb9a7c48daf2a97096f70ca1568f90bb44cc5731a7024c332b6f01e7</code></p>
-<p>Earlier downloads and their files are listed on <a href="https://github.com/CustomGPTer/refine/releases">GitHub Releases</a>. To report a problem with a version, <a href="https://github.com/CustomGPTer/refine/issues">open an issue on GitHub</a>.</p>
+<p>The file for version 1.0 is called <code>Refine.apk</code>. It is 3.1 MB (3,142,411 bytes). Its SHA-256 checksum is:</p>
+<p><code class="sum">9c308e06eb9a7c48daf2a97096f70ca1568f90bb44cc5731a7024c332b6f01e7</code></p>
+<p>On Windows, run <code>certutil -hashfile Refine.apk SHA256</code> and compare. Every version is signed with the same key, so each one installs over the last and keeps what you have saved.</p>
+<p>Older versions are on the <a href="https://github.com/CustomGPTer/refine/releases">GitHub releases page</a>.</p>
 </div>
 </div>
 </main>
 <footer class="colophon">
 <div class="wrap">
 <div>
+<a class="brand" href="./" aria-label="Refine home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1f3a5f"/><circle cx="48" cy="48" r="18" fill="none" stroke="#fff" stroke-width="5"/><path d="M61.5 61.5 77 77" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M39 41.5h18M42.5 48h11M46 54.5h4" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg><span>Refine</span></a>
 <p>&copy; 2026 Jonathan Jackson. Refine is an independent app.</p>
-<p>This site uses no cookies and no tracking. It is set in Literata and Atkinson Hyperlegible.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
 </div>
-<nav aria-label="Footer"><ul>
+<nav aria-label="The app"><h2>The app</h2><ul>
 <li><a href="./">Home</a></li>
-<li><a href="shortcuts.html">Shortcuts</a></li>
-<li><a href="releases.html">Release notes</a></li>
-<li><a href="more-apps.html">More apps</a></li>
-<li><a href="privacy.html">Privacy policy</a></li>
-<li><a href="terms.html">Terms of use</a></li>
-<li><a href="licences.html">Licences</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+<li><a href="./shortcuts.html">Shortcuts</a></li>
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
 <li><a href="https://github.com/CustomGPTer/refine/issues">Contact</a></li>
 </ul></nav>
 </div>
